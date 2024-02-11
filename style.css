@@ -1,0 +1,82 @@
+body {
+    background-color: #b5a1ac;
+    font-family: "Noto Serif", serif;
+}
+
+.pagejump {
+    text-decoration: none;
+    color: #eee8eb;
+}
+
+.pagejump :visited {
+    color: #eee8eb;
+}
+
+nav, footer {
+    width: 100%; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    font-weight: 300;
+}
+
+nav {
+    color: #eee8eb;
+    background-color: #06314f;
+}
+
+.navitem {
+    width: min-content;
+    white-space: nowrap;
+}
+
+h1 {
+    background: url(https://photojournal.jpl.nasa.gov/jpegMod/PIA22567_modest.jpg);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 700;
+    font-size: 10rem;
+    text-align: center;
+}
+
+#aboutMe {
+    padding: 1% 5% 1% 5%;
+    margin-bottom: 5%;
+    background-color: #eee8eb;
+    opacity: .8;
+}
+
+#aboutMe p {
+    font-family:  "Noto Sans", sans-serif;
+    font-weight: 300;
+    text-align: justify;
+}
+
+footer {
+    justify-content: center;
+    color: #06314f;
+}
+
+footer div {
+    padding: 15px;
+}
+
+nav :hover {
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    nav {
+        flex-direction: column;
+        height:fit-content;
+    }
+
+    .navitem {
+        margin: 1%;
+    }
+}
